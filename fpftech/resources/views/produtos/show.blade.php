@@ -4,25 +4,37 @@
     <div class="row">
         <div class="col-lg-12 margin-tb">
             <div class="pull-left">
-                <h2> Show Article</h2>
+                <h3> Visualização de Produto</h3>
             </div>
             <div class="pull-right">
-                <a class="btn btn-primary" href="{{ route('articles.index') }}"> Back</a>
+                <a class="btn btn-primary" href="{{ route('produtos.index') }}"><span class="glyphicon glyphicon-menu-left"></span> Voltar</a>
             </div>
         </div>
     </div>
-
+    <hr>
     <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
-                <strong>Title:</strong>
-                {{ $article->title}}
+                <strong>Nome:</strong>
+                {{ $produto->nome}}
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
-                <strong>Body:</strong>
-                {{ $article->body}}
+                <strong>Descrição:</strong>
+                {{ $produto->descricao}}
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="form-group">
+                <strong>Quantidade:</strong>
+                {{ $produto->quantidade}}
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="form-group">
+                <strong>Valor:</strong>
+                {{ $produto->preco}}
             </div>
         </div>
     </div>
